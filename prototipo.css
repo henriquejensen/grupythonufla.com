@@ -12,7 +12,7 @@ body {
     background: #383435;
     text-align: center;
     color: white;
-    height: 300px;
+    min-height: 300px;
     width: 100%;
     float: left;
 }
@@ -24,15 +24,15 @@ body {
     padding-bottom: 10px;
 }
 
-.container {
+.projetos {
     display: inline-block;
     text-align: center;
     font-size: 16px;
     background: #ee5454;
-    height: 700px;
+    min-height: 700px;
     width: 100%;
 }
-.projetos {
+.quadro {
     display: inline-flex;
     width: 1000px;
 }
@@ -51,21 +51,36 @@ body {
     height: 180px;
 }
 
-.membros {
+.membros-container {
     background: #383435;
-    height: 300px;
+    min-height: 300px;
     width: 100%;
+    padding-top: 20px;
+}
+.membro {
+    width: 130;
+    color: #EEF0F3;
+    margin: 0 auto;
+}
+.membro-img {
+    height: 130;
+    width: 130;
+    background: #EEF0F3;
+}
+
+.membro-texto {
+    text-align: center;
 }
 
 @media(max-width: 1000px) {
-    .projetos {
+    .quadro {
         width: 98%;
         margin: 10px;
     }
 }
 
 @media(max-width: 768px) {
-    .projetos {
+    .quadro {
         display: inline;
     }
 }
