@@ -13,7 +13,7 @@ body {
     text-align: center;
     color: white;
     height: 300px;
-    width: 80%;
+    width: 100%;
     float: left;
 }
 
@@ -22,27 +22,6 @@ body {
     font-size: 100px;
     padding-top: 10px;
     padding-bottom: 10px;
-}
-
-.twitter {
-    background: #4099FF;
-    text-align: center;
-    color: white;
-    height: 300px;
-    width: 20%;
-    float: right;
-}
-
-.twitter h1 {
-    font-weight: 800;
-    font-size: 60px;
-}
-
-#linhaTwitter {
-    background: #383435;
-    width: 100%;
-    height: 10;
-    margin-bottom: 10px;
 }
 
 .container {
@@ -55,17 +34,18 @@ body {
 }
 .projetos {
     display: inline-flex;
+    width: 1000px;
 }
 .proj {
     height: 500px;
-    width: 400px;
     background: #f6f6f6;
     border-radius: 2px;
-    margin: 25px;
+    margin: 15px;
 }
 .proj-texto {
     font-weight: 500;
-    padding: 10px;
+    color: #52575c;
+    padding: 5px;
 }
 .proj-img {
     height: 180px;
@@ -74,4 +54,18 @@ body {
 .membros {
     background: #383435;
     height: 300px;
+    width: 100%;
+}
+
+@media(max-width: 1000px) {
+    .projetos {
+        width: 98%;
+        margin: 10px;
+    }
+}
+
+@media(max-width: 768px) {
+    .projetos {
+        display: inline;
+    }
 }
